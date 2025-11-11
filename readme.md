@@ -21,7 +21,7 @@ If you have Git installed, this is the quickest and easiest way to get started.
 1.  **Clone the Repository:** Open a terminal and run the following command. This will download the project into a new folder called `filing-system`.
 
     ```bash
-    git clone https://github.com/your-username/filing-system.git
+    git clone https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME].git
     ```
 
 2.  **Navigate into the Directory:**
@@ -42,7 +42,11 @@ If you have Git installed, this is the quickest and easiest way to get started.
 
 This is a great option if you don't use Git.
 
-1.  **Download the Code:** Click the green "Code" button at the top of the repository page, then click "Download ZIP".
+1.  **Download the Code:** You can download the project as a ZIP file directly by clicking the link below:
+
+    [**&darr; Download ZIP**](https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/archive/refs/heads/main.zip)
+
+    Alternatively, you can click the green "Code" button at the top of the repository page, then click "Download ZIP".
 
     ![Download ZIP](https://i.imgur.com/34Jb28s.png)
 
@@ -112,3 +116,17 @@ mkdir -p "090_Archive/099_TRASH"
 ```
 
 </details>
+
+---
+
+### Option 4: One-Command Deployment (for Mac/Linux)
+
+This is the most straightforward method for users on macOS or Linux. It uses a single command to download and run the setup script.
+
+1.  **Open a Terminal:** Open your terminal application.
+
+2.  **Run the Deployment Command:** Copy and paste the following command into your terminal and press Enter. This will download the `create_folders.sh` script and execute it, setting up the entire folder structure for you.
+
+    ```bash
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/main/create_folders.sh)"
+    ```
