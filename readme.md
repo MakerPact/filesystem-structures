@@ -10,7 +10,7 @@ Before creating the folders, we highly recommend reading through the documentati
 
 ## How to Get Your Filing Cabinet
 
-Here are a few ways to create your own pre-organized "Filing Cabinet" folder. Choose the one that suits you best. After running any of these commands, you'll have a single folder named `Filing Cabinet` that you can copy and paste anywhere on your computer.
+To get started, you need to create the folder structure on your computer. Here are four easy ways to do it.
 
 ---
 
@@ -21,7 +21,7 @@ If you have Git installed, this is the quickest and easiest way to get started.
 1.  **Clone the Repository:** Open a terminal and run the following command. This will download the project into a new folder called `filing-system`.
 
     ```bash
-    git clone https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME].git
+    git clone https://github.com/The-Ultimate-Filing-System/filesystem-structures.git
     ```
 
 2.  **Navigate into the Directory:**
@@ -49,7 +49,7 @@ If you have Git installed, this is the quickest and easiest way to get started.
 
 1.  **Download the Code:** You can download the project as a ZIP file directly by clicking the link below:
 
-    [**&darr; Download ZIP**](https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/archive/refs/heads/main.zip)
+    [**&darr; Download ZIP**](https://github.com/The-Ultimate-Filing-System/filesystem-structures/archive/refs/heads/main.zip)
 
     Alternatively, you can click the green "Code" button at the top of the repository page, then click "Download ZIP".
 
@@ -83,11 +83,5 @@ If you have Git installed, you can clone this repository.
 2.  **Navigate into the Directory:**
 
     ```bash
-    cd filing-system
-    ```
-
-3.  **Run the Script:** This will create the `Filing Cabinet` folder in the project directory.
-
-    ```bash
-    ./create_folders.sh
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/The-Ultimate-Filing-System/filesystem-structures/main/create_folders.sh)"
     ```
