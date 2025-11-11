@@ -1,4 +1,8 @@
 #!/bin/bash
+# This script creates a directory structure for organizing your files.
+# It will create a main folder called "Filing Cabinet" in the current directory.
+
+# Create the main "Filing Cabinet" directory and all necessary subdirectories
 mkdir -p "Filing Cabinet/000_Inbox/009_TRASH"
 mkdir -p "Filing Cabinet/010_Projects/011_Website_Redesign"
 mkdir -p "Filing Cabinet/010_Projects/012_Vacation_Planning_2026"
@@ -34,3 +38,5 @@ mkdir -p "Filing Cabinet/050_Media/059_TRASH"
 mkdir -p "Filing Cabinet/090_Archive/Archived_Projects"
 mkdir -p "Filing Cabinet/090_Archive/Old_Job_Search_Materials"
 mkdir -p "Filing Cabinet/090_Archive/099_TRASH"
+
+echo "Filing Cabinet structure created successfully."
