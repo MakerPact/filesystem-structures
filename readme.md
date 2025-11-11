@@ -1,76 +1,15 @@
-This is a system to deploy a fileing system inside of a folder, on your pc, or even better cloude storage for deployment.
-to deploy the folders, make a folder and name it something like fileingCabinat.
-Then right click, bring up a terminal, powershell, or command prompt, then run the code bellow.
-What this does is makes all of the outline folders for you to start sorting things into.
+# Filing System
 
+This project provides a simple, yet powerful, filing system for your personal or professional documents. It's based on a hierarchical folder structure and a consistent naming convention.
+
+## Getting Started
+
+To get started, you can use the `create_folders.sh` script to create the recommended folder structure.
+
+```bash
+./create_folders.sh
 ```
-mkdir -p "000_Inbox/009_TRASH"
-mkdir -p "010_Projects/011_Website_Redesign"
-mkdir -p "010_Projects/012_Vacation_Planning_2026"
-mkdir -p "010_Projects/013_Home_Renovation"
-mkdir -p "010_Projects/019_TRASH"
-mkdir -p "020_Areas/021_Finances/Budget"
-mkdir -p "020_Areas/021_Finances/Receipts"
-mkdir -p "020_Areas/021_Finances/Taxes"
-mkdir -p "020_Areas/022_Health_&_Fitness/Workout_Logs"
-mkdir -p "020_Areas/022_Health_&_Fitness/Recipes"
-mkdir -p "020_Areas/022_Health_&_Fitness/Medical_Records"
-mkdir -p "020_Areas/023_Professional_Development/Courses"
-mkdir -p "020_Areas/023_Professional_Development/Certifications"
-mkdir -p "020_Areas/023_Professional_Development/Performance_Reviews"
-mkdir -p "020_Areas/024_Household/Maintenance_Records"
-mkdir -p "020_Areas/024_Household/Utilities"
-mkdir -p "020_Areas/024_Household/Vehicle_Information"
-mkdir -p "020_Areas/029_TRASH"
-mkdir -p "030_Documents/031_Identification"
-mkdir -p "030_Documents/032_Contracts"
-mkdir -p "030_Documents/033_Warranties_&_Manuals"
-mkdir -p "030_Documents/034_Educational_Transcripts"
-mkdir -p "030_Documents/039_TRASH"
-mkdir -p "040_Resources/041_Programming_Languages"
-mkdir -p "040_Resources/042_Marketing_Strategies"
-mkdir -p "040_Resources/043_Photography_Techniques"
-mkdir -p "040_Resources/044_Interesting_Articles"
-mkdir -p "040_Resources/049_TRASH"
-mkdir -p "050_Media/051_Photos"
-mkdir -p "050_Media/052_Videos"
-mkdir -p "050_Media/053_Music"
-mkdir -p "050_Media/059_TRASH"
-mkdir -p "090_Archive/Archived_Projects"
-mkdir -p "090_Archive/Old_Job_Search_Materials"
-mkdir -p "090_Archive/099_TRASH"mkdir -p "000_Inbox/009_TRASH"
-mkdir -p "010_Projects/011_Website_Redesign"
-mkdir -p "010_Projects/012_Vacation_Planning_2026"
-mkdir -p "010_Projects/013_Home_Renovation"
-mkdir -p "010_Projects/019_TRASH"
-mkdir -p "020_Areas/021_Finances/Budget"
-mkdir -p "020_Areas/021_Finances/Receipts"
-mkdir -p "020_Areas/021_Finances/Taxes"
-mkdir -p "020_Areas/022_Health_&_Fitness/Workout_Logs"
-mkdir -p "020_Areas/022_Health_&_Fitness/Recipes"
-mkdir -p "020_Areas/022_Health_&_Fitness/Medical_Records"
-mkdir -p "020_Areas/023_Professional_Development/Courses"
-mkdir -p "020_Areas/023_Professional_Development/Certifications"
-mkdir -p "020_Areas/023_Professional_Development/Performance_Reviews"
-mkdir -p "020_Areas/024_Household/Maintenance_Records"
-mkdir -p "020_Areas/024_Household/Utilities"
-mkdir -p "020_Areas/024_Household/Vehicle_Information"
-mkdir -p "020_Areas/029_TRASH"
-mkdir -p "030_Documents/031_Identification"
-mkdir -p "030_Documents/032_Contracts"
-mkdir -p "030_Documents/033_Warranties_&_Manuals"
-mkdir -p "030_Documents/034_Educational_Transcripts"
-mkdir -p "030_Documents/039_TRASH"
-mkdir -p "040_Resources/041_Programming_Languages"
-mkdir -p "040_Resources/042_Marketing_Strategies"
-mkdir -p "040_Resources/043_Photography_Techniques"
-mkdir -p "040_Resources/044_Interesting_Articles"
-mkdir -p "040_Resources/049_TRASH"
-mkdir -p "050_Media/051_Photos"
-mkdir -p "050_Media/052_Videos"
-mkdir -p "050_Media/053_Music"
-mkdir -p "050_Media/059_TRASH"
-mkdir -p "090_Archive/Archived_Projects"
-mkdir -p "090_Archive/Old_Job_Search_Materials"
-mkdir -p "090_Archive/099_TRASH"
-```
+
+## Documentation
+
+For a detailed explanation of the filing system, including the folder structure, a flowchart for deciding where to file documents, and a universal file naming convention, please see the [documentation](./docs/index.html).
