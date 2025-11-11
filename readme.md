@@ -10,7 +10,7 @@ Before creating the folders, we highly recommend reading through the documentati
 
 ## Setting Up Your Filing Cabinet
 
-To get started, you need to create the folder structure on your computer. Here are three easy ways to do it.
+To get started, you need to create the folder structure on your computer. Here are four easy ways to do it.
 
 ---
 
@@ -21,7 +21,7 @@ If you have Git installed, this is the quickest and easiest way to get started.
 1.  **Clone the Repository:** Open a terminal and run the following command. This will download the project into a new folder called `filing-system`.
 
     ```bash
-    git clone https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME].git
+    git clone https://github.com/The-Ultimate-Filing-System/filesystem-structures.git
     ```
 
 2.  **Navigate into the Directory:**
@@ -44,7 +44,7 @@ This is a great option if you don't use Git.
 
 1.  **Download the Code:** You can download the project as a ZIP file directly by clicking the link below:
 
-    [**&darr; Download ZIP**](https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/archive/refs/heads/main.zip)
+    [**&darr; Download ZIP**](https://github.com/The-Ultimate-Filing-System/filesystem-structures/archive/refs/heads/main.zip)
 
     Alternatively, you can click the green "Code" button at the top of the repository page, then click "Download ZIP".
 
@@ -128,5 +128,5 @@ This is the most straightforward method for users on macOS or Linux. It uses a s
 2.  **Run the Deployment Command:** Copy and paste the following command into your terminal and press Enter. This will download the `create_folders.sh` script and execute it, setting up the entire folder structure for you.
 
     ```bash
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/main/create_folders.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/The-Ultimate-Filing-System/filesystem-structures/main/create_folders.sh)"
     ```
