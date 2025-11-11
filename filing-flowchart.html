@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filing Decision Flowchart & Naming Convention</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using Inter font as default */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <div class="container mx-auto max-w-3xl py-12 px-4">
+        
+        <div>
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-10">
+                The Filing Decision Flowchart
+            </h1>
+            
+            <p class="text-lg text-slate-600 text-center mb-12">
+                Ask yourself these questions about a file. The first "Yes" you get tells you where it belongs.
+            </p>
+
+            <div class="flex flex-col items-center">
+
+                <div class="bg-indigo-600 text-white py-3 px-8 rounded-full shadow-lg">
+                    <span class="text-lg font-bold tracking-wide">START HERE</span>
+                </div>
+
+                <div class="my-4 text-slate-400">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full">
+                    <p class="text-xl font-semibold text-slate-800 text-center">
+                        Is this file new and unsorted?
+                    </p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">000_Inbox</code>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-4 pt-4 border-t border-slate-200 text-center">
+                        Process your Inbox later. When you do, ask the following questions...
+                    </p>
+                </div>
+
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Does this file relate to something I am <strong class="text-blue-600">actively working on</strong> that has a <strong class="text-blue-600">specific goal and a deadline</strong>?
+                    </p>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">(e.g., planning a vacation, preparing a presentation, redesigning a website)</p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">010_Projects</code>
+                    </div>
+                </div>
+                
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Does this file relate to an <strong class="text-purple-600">ongoing area of my life</strong> or a role I maintain that has <strong class="text-purple-600">no end date</strong>?
+                    </p>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">(e.g., my health, my finances, home maintenance, professional development)</p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">020_Areas</code>
+                    </div>
+                </div>
+
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Is this an <strong class="text-red-600">important, official document</strong> for my records?
+                    </p>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">(e.g., a copy of my passport, a signed contract, a car title, a diploma)</p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">030_Documents</code>
+                    </div>
+                </div>
+
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Is this information, knowledge, or an asset I am saving for <strong class="text-teal-600">future reference</strong> on a topic of interest?
+                    </p>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">(e.g., articles about coding, a PDF book on graphic design, a collection of recipes)</p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">040_Resources</code>
+                    </div>
+                </div>
+                
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Is this a <strong class="text-pink-600">personal media file</strong>?
+                    </p>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">(e.g., photos, home videos, music)</p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">050_Media</code>
+                    </div>
+                </div>
+                
+                <div class="my-4 text-slate-500 flex flex-col items-center">
+                    <span class="text-lg font-semibold text-red-600 mb-1">NO</span>
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6 w-full text-center">
+                    <p class="text-xl font-semibold text-slate-800">
+                        Is this from a project that is <strong class="text-gray-600">now finished</strong> or an area of my life that is <strong class="text-gray-600">no longer active</strong>?
+                    </p>
+                    <div class="mt-4 flex items-center justify-center bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <span class="text-green-600 font-bold text-xl mr-2">Yes</span>
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <code class="bg-white text-slate-800 font-mono text-lg py-2 px-4 rounded-md shadow-inner border border-slate-200">090_Archive</code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center text-slate-600 max-w-2xl mx-auto">
+                <p class="text-lg leading-relaxed">
+                    This systematic approach removes the guesswork. By following this flowchart, you ensure every file has a logical home, making your digital life organized and easy to navigate.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-16 border-t-2 border-slate-200">
+
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-10">
+                The Universal File Naming Convention
+            </h1>
+            
+            <p class="text-lg text-slate-600 text-center mb-12">
+                A great folder structure is only half the solution; a consistent file naming convention is what makes a system truly powerful and searchable.
+            </p>
+
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-6 rounded-lg shadow-md mb-12">
+                <strong class="font-bold text-lg block">The Golden Rule: Be consistent.</strong>
+                <span class="text-lg">The goal is a filename that tells you what the file is without even opening it.</span>
+            </div>
+
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">The Anatomy of a Perfect Filename</h2>
+                <p class="text-lg text-slate-600 mb-4">
+                    The full, modular structure is:
+                </p>
+                <code class="block w-full text-center bg-slate-800 text-white font-mono text-xl p-6 rounded-lg shadow-inner">
+                    [Date]_[Description]_[Version]_[Status].[ext]
+                </code>
+                <p class="text-lg text-slate-600 mt-4">
+                    You won't use every part for every file. You pick and choose the components that are relevant.
+                </p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">The System Explained</h2>
+
+            <div class="space-y-8">
+                
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-bold text-blue-600 mb-3">1. The Date Component: YYYY-MM-DD</h3>
+                    <p class="text-lg text-slate-600 mb-4">
+                        This is the most important component for sorting. Always use the <code class="bg-slate-100 p-1 rounded">YYYY-MM-DD</code> format to ensure files sort chronologically.
+                    </p>
+                    <strong class="text-lg text-slate-800">When to use a date?</strong>
+                    <p class="text-lg text-slate-600 mb-4">Use a date when the file represents a snapshot in time (invoices, reports, meeting notes, photos, receipts, official documents).</p>
+                    <strong class="text-lg text-slate-800">Date Format Options:</strong>
+                    <ul class="list-disc list-inside space-y-2 mt-2 text-lg text-slate-600">
+                        <li>
+                            <strong>Full Date (YYYY-MM-DD):</strong> For specific, day-related items.
+                            <br>
+                            <code class="text-sm bg-slate-100 p-1 rounded">2025-11-21_MeetingNotes_ProjectAlpha.txt</code>
+                        </li>
+                        <li>
+                            <strong>Month (YYYY-MM):</strong> Perfect for monthly reports or bills.
+                            <br>
+                            <code class="text-sm bg-slate-100 p-1 rounded">2025-10_ElectricityBill.pdf</code>
+                        </li>
+                        <li>
+                            <strong>Year (YYYY):</strong> For annual items.
+                            <br>
+                            <code class="text-sm bg-slate-100 p-1 rounded">2025_AnnualTaxReturn.pdf</code>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-bold text-purple-600 mb-3">2. The Description Component: What_Is_This</h3>
+                    <p class="text-lg text-slate-600 mb-4">
+                        This is the core identity of your file. Be descriptive but concise.
+                    </p>
+                    <strong class="text-lg text-slate-800">Rules:</strong>
+                    <ul class="list-disc list-inside space-y-2 mt-2 text-lg text-slate-600">
+                        <li>Use underscores (<code class="bg-slate-100 p-1 rounded">_</code>) or hyphens (<code class="bg-slate-100 p-1 rounded">-</code>) instead of spaces.</li>
+                        <li>You can use <code class="bg-slate-100 p-1 rounded">PascalCase</code> (e.g., SalesSummary) if you prefer, but be consistent.</li>
+                        <li><strong>Good:</strong> <code class="text-sm bg-slate-100 p-1 rounded">HomeLoan_PreApproval_Letter</code></li>
+                        <li><strong>Bad:</strong> <code class="text-sm bg-slate-100 p-1 rounded">document 1 from bank</code></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-bold text-teal-600 mb-3">3. The Version Component: v1, v2.1</h3>
+                    <p class="text-lg text-slate-600 mb-4">
+                        Use this for any file that will have multiple iterations. This avoids the dreaded <code class="bg-slate-100 p-1 rounded">Final_Report_final_FINAL_v2.docx</code>.
+                    </p>
+                    <strong class="text-lg text-slate-800">Formats:</strong>
+                    <ul class="list-disc list-inside space-y-2 mt-2 text-lg text-slate-600">
+                        <li><strong>Simple:</strong> <code class="bg-slate-100 p-1 rounded">v1</code>, <code class="bg-slate-100 p-1 rounded">v2</code>, <code class="bg-slate-100 p-1 rounded">v3</code> for major versions.</li>
+                        <li><strong>Detailed:</strong> <code class="bg-slate-100 p-1 rounded">v1-1</code>, <code class="bg-slate-100 p-1 rounded">v1-2</code> or <code class="bg-slate-100 p-1 rounded">v1.1</code>, <code class="bg-slate-100 p-1 rounded">v1.2</code> for minor revisions.</li>
+                        <li><strong>Example:</strong> <code class="text-sm bg-slate-100 p-1 rounded">WebsiteMockup_v2.psd</code></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-bold text-red-600 mb-3">4. The Status Component: draft, final</h3>
+                    <p class="text-lg text-slate-600 mb-4">
+                        This clearly communicates the file's stage in its lifecycle. It's often used with the Version component.
+                    </p>
+                    <strong class="text-lg text-slate-800">Common Statuses:</strong>
+                    <p class="text-lg text-slate-600"><code class="bg-slate-100 p-1 rounded">draft</code>, <code class="bg-slate-100 p-1 rounded">review</code>, <code class="bg-slate-100 p-1 rounded">approved</code>, <code class="bg-slate-100 p-1 rounded">final</code>, <code class="bg-slate-100 p-1 rounded">published</code>.</p>
+                    <strong class="text-lg text-slate-800 mt-2 block">Example:</strong>
+                    <ul class="list-none space-y-2 mt-2 text-lg text-slate-600">
+                        <li><code class="text-sm bg-slate-100 p-1 rounded">2025-11-30_QuarterlyReport_v3_review.docx</code></li>
+                        <li><code class="text-sm bg-slate-100 p-1 rounded">2025-12-05_QuarterlyReport_v4_final.pdf</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Putting It All Together: Examples by Folder</h2>
+                <div class="space-y-6">
+                    
+                    <div class="bg-white rounded-lg shadow-lg border border-slate-200 p-6">
+                        <h4 class="font-bold text-lg text-slate-800">In <code class="bg-slate-100 p-1 rounded">010_Projects/011_Website_Redesign</code>:</h4>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 text-lg space-y-1">
+                            <li><code class="bg-slate-100 p-1 rounded">2025-11-15_ClientBrief.docx</code></li>
+                            <li><code class="bg-slate-100 p-1 rounded">HomepageMockup_v3_review.png</code></li>
+                            <li><code class="bg-slate-100 p-1 rounded">2025-11-20_ProjectTimeline_v1_final.xlsx</code></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg border border-slate-200 p-6">
+                        <h4 class="font-bold text-lg text-slate-800">In <code class="bg-slate-100 p-1 rounded">020_Areas/021_Finances/Taxes</code>:</h4>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 text-lg space-y-1">
+                            <li><code class="bg-slate-100 p-1 rounded">2024_TaxReturn_final.pdf</code></li>
+                            <li><code class="bg-slate-100 p-1 rounded">2025-04-15_TaxPaymentConfirmation.eml</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg border border-slate-200 p-6">
+                        <h4 class="font-bold text-lg text-slate-800">In <code class="bg-slate-100 p-1 rounded">040_Resources/041_Programming_Languages</code>:</h4>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 text-lg space-y-1">
+                            <li><code class="bg-slate-100 p-1 rounded">AdvancedPythonTechniques.pdf</code> (No date needed)</li>
+                            <li><code class="bg-slate-100 p-1 rounded">JavaScript_ES6_Cheatsheet.png</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg border border-slate-200 p-6">
+                        <h4 class="font-bold text-lg text-slate-800">In <code class="bg-slate-100 p-1 rounded">050_Media/051_Photos</code>:</h4>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 text-lg space-y-1">
+                            <li><code class="bg-slate-100 p-1 rounded">2025-08-10_ZionNationalPark_001.jpg</code></li>
+                            <li><code class="bg-slate-100 p-1 rounded">2025-08-10_ZionNationalPark_002.jpg</code></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
