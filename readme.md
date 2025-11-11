@@ -16,7 +16,21 @@ Here are a few ways to create your own pre-organized "Filing Cabinet" folder. Ch
 
 ### Option 1: The Easiest Way (Download ZIP)
 
-This is the best option for most users.
+If you have Git installed, this is the quickest and easiest way to get started.
+
+1.  **Clone the Repository:** Open a terminal and run the following command. This will download the project into a new folder called `filing-system`.
+
+    ```bash
+    git clone https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME].git
+    ```
+
+2.  **Navigate into the Directory:**
+
+    ```bash
+    cd filing-system
+    ```
+
+3.  **Run the Script:** This will create all the necessary folders in your current directory.
 
 1.  **Download the Code:** Click the green "Code" button at the top of the repository page, then click "Download ZIP".
 2.  **Unzip the File:** Unzip the downloaded file. You'll have a folder likely named `filing-system-main`.
@@ -33,7 +47,13 @@ This is the best option for most users.
 
 ### Option 2: The Quick Way (Copy & Paste)
 
-If you're comfortable with the terminal, you can create the folder structure with a single command.
+1.  **Download the Code:** You can download the project as a ZIP file directly by clicking the link below:
+
+    [**&darr; Download ZIP**](https://github.com/[INSERT GITHUB USERNAME]/[INSERT REPOSITORY NAME]/archive/refs/heads/main.zip)
+
+    Alternatively, you can click the green "Code" button at the top of the repository page, then click "Download ZIP".
+
+    ![Download ZIP](https://i.imgur.com/34Jb28s.png)
 
 1.  **Open a Terminal:** Open a terminal on Mac/Linux, or "Git Bash" on Windows.
 2.  **Navigate:** Go to the directory where you want to create your `Filing Cabinet` folder (e.g., `cd ~/Documents`).
