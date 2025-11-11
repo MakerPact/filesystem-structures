@@ -1,0 +1,46 @@
+# PowerShell script to create the folder structure for The Ultimate Filing System
+
+# This script creates a directory structure for organizing your files.
+# It will create a main folder called "Filing Cabinet" in the current directory.
+
+# Create the main "Filing Cabinet" directory
+New-Item -ItemType Directory -Force -Path "Filing Cabinet"
+
+# Create subdirectories within "Filing Cabinet"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/000_Inbox/009_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/010_Projects/011_Website_Redesign"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/010_Projects/012_Vacation_Planning_2026"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/010_Projects/013_Home_Renovation"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/010_Projects/019_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/021_Finances/Budget"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/021_Finances/Receipts"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/021_Finances/Taxes"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/022_Health_&_Fitness/Workout_Logs"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/022_Health_&_Fitness/Recipes"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/022_Health_&_Fitness/Medical_Records"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/023_Professional_Development/Courses"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/023_Professional_Development/Certifications"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/023_Professional_Development/Performance_Reviews"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/024_Household/Maintenance_Records"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/024_Household/Utilities"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/024_Household/Vehicle_Information"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/020_Areas/029_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/030_Documents/031_Identification"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/030_Documents/032_Contracts"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/030_Documents/033_Warranties_&_Manuals"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/030_Documents/034_Educational_Transcripts"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/030_Documents/039_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/040_Resources/041_Programming_Languages"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/040_Resources/042_Marketing_Strategies"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/040_Resources/043_Photography_Techniques"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/040_Resources/044_Interesting_Articles"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/040_Resources/049_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/050_Media/051_Photos"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/050_Media/052_Videos"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/050_Media/053_Music"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/050_Media/059_TRASH"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/090_Archive/Archived_Projects"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/090_Archive/Old_Job_Search_Materials"
+New-Item -ItemType Directory -Force -Path "Filing Cabinet/090_Archive/099_TRASH"
+
+Write-Host "Filing Cabinet structure created successfully."
