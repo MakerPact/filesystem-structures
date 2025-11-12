@@ -2,3 +2,4 @@
 /resources/
 hugo_server.log
 .hugo_build.lock
+/node_modules/

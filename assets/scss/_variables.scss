@@ -1,0 +1,13 @@
+// Custom color palette
+$primary: #3F8CFF;
+$accent: #FFB347;
+$background: #F9FAFB;
+$text: #1F2937;
+$highlight: #10B981;
+
+// Override Bootstrap's theme colors
+$blue: $primary;
+$orange: $accent;
+$light: $background;
+$dark: $text;
+$green: $highlight;

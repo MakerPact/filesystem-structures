@@ -1,0 +1,8 @@
+// Import custom variables
+@import "variables";
+
+// Import the theme's main SCSS file
+@import "themes/bootstrap/assets/main/scss/index";
+
+// Import custom styles
+@import "custom";
