@@ -33,3 +33,11 @@ hugo new content posts/my-new-post.md
 ```
 
 This will create a new Markdown file in the `content/posts` directory, pre-populated with the default front matter.
+### Deployment
+
+This repository is configured to automatically build and deploy the Hugo site to GitHub Pages. To enable this, you will need to:
+
+1.  Navigate to your repository's **Settings** page.
+2.  In the **Code and automation** section of the sidebar, click on **Pages**.
+3.  Under **Build and deployment**, select **GitHub Actions** as the source.
+

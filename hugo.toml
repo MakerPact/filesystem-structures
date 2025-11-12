@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "https://the-ultimate-filing-system.github.io/filesystem-structures/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
