@@ -1,4 +1,7 @@
 baseURL = "https://the-ultimate-filing-system.github.io/filesystem-structures/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "ananke"
+theme = "bootstrap"
+
+[build]
+writeStats = true

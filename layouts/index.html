@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="hero" style="background-image: url('{{ "images/hero-image.jpg" | relURL }}');">
+    <div class="container-fluid text-center py-5 text-white">
+        <h1 class="display-1">Find Your Perfect Digital Filing System</h1>
+        <p class="lead">Organize your digital life with ease.</p>
+        <a href="#filing-systems" class="btn btn-primary btn-lg">Explore Filing Systems</a>
+    </div>
+</div>
+
+<div id="filing-systems" class="container py-5">
+    <h2 class="text-center mb-5">Choose Your System</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Chronological</h5>
+                    <p class="card-text">A simple, date-based system for organizing your files.</p>
+                    <a href="/chronological" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Johnny Decimal</h5>
+                    <p class="card-text">A project-based system for organizing your files.</p>
+                    <a href="/johnny-decimal" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">PARA Method</h5>
+                    <p class="card-text">An action-based system for organizing your files.</p>
+                    <a href="/para-method" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
