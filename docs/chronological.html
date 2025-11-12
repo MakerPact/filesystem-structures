@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chronological System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <a href="index.html" class="text-blue-500 hover:underline mb-4 inline-block">&larr; Back to Home</a>
+        <h1 class="text-4xl font-bold mb-8">The Chronological System</h1>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Overview</h2>
+            <p>The Chronological System is a simple, date-based filing system. It's the perfect way to organize files where the date is the most important piece of information, such as photos, videos, journals, or logs.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">How it Works</h2>
+            <p>The system is based on a simple hierarchy of folders:</p>
+            <ul class="list-disc list-inside mt-4">
+                <li>A main folder for the year (e.g., "2024")</li>
+                <li>Subfolders for each month (e.g., "01_January", "02_February")</li>
+            </ul>
+            <p class="mt-4">You can then place your files directly into the month folders, or create further subdirectories for specific days or events.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Download & Setup</h2>
+            <p class="mb-4">You can set up the Chronological folder structure for the current year using the scripts below. They will create a new folder for the current year in the current directory.</p>
+            <div class="flex space-x-4">
+                <a href="../create_chronological.sh" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" download>Download .sh</a>
+                <a href="../create_chronological.ps1" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" download>Download .ps1</a>
+                <a href="../create_chronological.bat" class="inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" download>Download .bat</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
