@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Johnny Decimal System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <a href="index.html" class="text-blue-500 hover:underline mb-4 inline-block">&larr; Back to Home</a>
+        <h1 class="text-4xl font-bold mb-8">The Johnny Decimal System</h1>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Overview</h2>
+            <p>The Johnny Decimal System is a number-based filing system that provides a structured and scalable way to organize your files. It's perfect for managing large amounts of data and complex projects.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">How it Works</h2>
+            <ol class="list-decimal list-inside space-y-4">
+                <li>
+                    <h3 class="font-bold">Step 1: Divide everything into ten things</h3>
+                    <p>Take everything you need to organize and sort it into, at most, ten large buckets. Make sure the buckets are unambiguously different. Put a label on each bucket. This forces you to group things quite broadly, but that’s the point. We call these buckets your <strong>areas</strong>. An area might be ‘Finance’.</p>
+                </li>
+                <li>
+                    <h3 class="font-bold">Step 2: In each area, divide in ten again</h3>
+                    <p>Go through each bucket and repeat the process. This creates your <strong>categories</strong>. A category within the ‘Finance’ area might be ‘Tax Returns’. Now we have ten areas which contain ten categories each. That’s a hundred categories at the very most. It’s very unlikely you will end up with a hundred categories.</p>
+                </li>
+                <li>
+                    <h3 class="font-bold">Step 3: Organize your files</h3>
+                    <p>Finally, start to place files that you need to organize into these folders. Try to fit files into already existing categories. The more files you add, the more likely you are to encounter files that do not fit into your categories. Each time this happens consider if you have a lot of files without a home and create a new category to try to encompass as many of them as you can.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Download & Setup</h2>
+            <p class="mb-4">You can set up the Johnny Decimal folder structure using the scripts below. They will create a new "Johnny Decimal Filing System" folder in the current directory.</p>
+            <div class="flex space-x-4">
+                <a href="../create_johnny_decimal.sh" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" download>Download .sh</a>
+                <a href="../create_johnny_decimal.ps1" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" download>Download .ps1</a>
+                <a href="../create_johnny_decimal.bat" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" download>Download .bat</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
