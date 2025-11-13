@@ -4,7 +4,8 @@ module.exports = {
     content: [
       "./themes/hugo-saasify-theme/layouts/**/*.html",
       "./layouts/**/*.html",
-      "./content/**/*.{html,md}"
+      "./content/**/*.{html,md}",
+      "./hugo.toml"
     ],
     theme: {
       extend: {

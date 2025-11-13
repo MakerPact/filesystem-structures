@@ -1,1 +1,39 @@
-/* You can add your own custom css here. */
+
+body {
+    background-color: #1F2937;
+    color: #F9FAFB;
+}
+
+header {
+    background-color: rgba(31, 41, 55, 0.8);
+    border-bottom: 1px solid #4B5563;
+}
+
+.text-gray-900 {
+    color: #F9FAFB;
+}
+
+.text-gray-800 {
+    color: #E5E7EB;
+}
+
+.text-gray-700 {
+    color: #D1D5DB;
+}
+
+.text-gray-600 {
+    color: #9CA3AF;
+}
+
+a {
+    color: #60A5FA;
+}
+
+a:hover {
+    color: #3B82F6;
+}
+
+.card {
+    background-color: #374151;
+    color: #F9FAFB;
+}
