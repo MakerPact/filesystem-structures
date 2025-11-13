@@ -1,13 +1,16 @@
 ---
 title: "The Ultimate Filing System"
+layout: "landing"
 ---
 
-## Welcome to Your New Filing System
+## Stop Searching, Start Organizing
 
-This site provides a collection of scripts to help you organize your files. Each system has its own unique approach, so be sure to read the descriptions to find the one that is right for you.
+Tired of cluttered folders and lost files? Discover a digital filing system that clicks with your brain. We provide simple, powerful structures and the scripts to set them up instantly.
 
-### Filing Systems
+### Explore the Systems
 
-- [**Chronological**](/chronological/): A simple, time-based system for organizing your files.
-- [**Johnny Decimal**](/johnny_decimal/): A structured, number-based system for organizing your files.
-- [**PARA Method**](/para_method/): A flexible, action-oriented system for organizing your files.
+- **Chronological**: Simple & time-based. Perfect for journaling, project logs, or anything where date is key.
+- **Johnny Decimal**: Structured & number-based. Ideal for complex projects that demand a clear hierarchy.
+- **PARA Method**: Flexible & action-oriented. Great for dynamic workflows and managing knowledge.
+
+Ready to conquer your digital chaos? Choose a system, run the script, and enjoy the clarity of a perfectly organized digital life.
