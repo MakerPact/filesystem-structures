@@ -4025,6 +4025,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-800\/80 {
+  background-color: rgb(31 41 55 / 0.8);
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
