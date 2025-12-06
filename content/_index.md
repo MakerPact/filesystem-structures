@@ -7,12 +7,6 @@ layout: "landing"
 
 Tired of cluttered folders and lost files? Discover a digital filing system that clicks with your brain. We provide simple, powerful structures and the scripts to set them up instantly.
 
-### Explore the Systems
-
-- **[Chronological](/chronological)**: Simple & time-based. Perfect for journaling, project logs, or anything where date is key.
-- **[Johnny Decimal](/johnny-decimal)**: Structured & number-based. Ideal for complex projects that demand a clear hierarchy.
-- **[PARA Method](/para-method)**: Flexible & action-oriented. Great for dynamic workflows and managing knowledge.
-
 ### Download
 
 You can download the entire repository, including all scripts and documentation, as a ZIP file:
