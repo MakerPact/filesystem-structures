@@ -7,7 +7,6 @@
       "footer",
       "h1",
       "h2",
-      "h3",
       "h5",
       "head",
       "header",
@@ -15,10 +14,7 @@
       "link",
       "meta",
       "p",
-      "path",
       "script",
-      "span",
-      "svg",
       "title"
     ],
     "classes": [
@@ -44,12 +40,8 @@
       "gap-8",
       "grid",
       "grid-cols-1",
-      "h-4",
       "h-full",
       "hero",
-      "hover:bg-blue-700",
-      "inline-flex",
-      "items-center",
       "lead",
       "left-0",
       "lg:grid-cols-3",
@@ -61,13 +53,11 @@
       "mb-8",
       "md:grid-cols-2",
       "min-h-screen",
-      "mr-2",
       "mx-auto",
       "navbar",
       "navbar-brand",
       "navbar-expand-lg",
       "navbar-light",
-      "no-underline",
       "pt-20",
       "px-4",
       "py-12",
@@ -83,13 +73,10 @@
       "text-white",
       "text-xl",
       "top-0",
-      "w-4",
       "z-50"
     ],
     "ids": [
-      "download",
-      "filing-systems",
-      "stop-searching-start-organizing"
+      "filing-systems"
     ]
   }
 }
