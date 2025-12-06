@@ -18,6 +18,7 @@
       "title"
     ],
     "classes": [
+      "bg-blue-600",
       "bg-light",
       "btn",
       "btn-lg",
@@ -30,6 +31,7 @@
       "container",
       "container-fluid",
       "display-1",
+      "fill-current",
       "fixed",
       "flex",
       "flex-col",
@@ -59,9 +61,11 @@
       "pt-20",
       "px-4",
       "py-12",
+      "py-2",
       "py-4",
       "py-5",
       "right-0",
+      "rounded",
       "row",
       "text-4xl",
       "text-center",

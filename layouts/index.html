@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Chronological</h5>
                     <p class="card-text">A simple, date-based system for organizing your files.</p>
-                    <a href="/chronological" class="btn btn-primary">Learn More</a>
+                    <a href="{{ "chronological" | relURL }}" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Johnny Decimal</h5>
                     <p class="card-text">A project-based system for organizing your files.</p>
-                    <a href="/johnny-decimal" class="btn btn-primary">Learn More</a>
+                    <a href="{{ "johnny-decimal" | relURL }}" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -33,10 +33,14 @@
                 <div class="card-body">
                     <h5 class="card-title">PARA Method</h5>
                     <p class="card-text">An action-based system for organizing your files.</p>
-                    <a href="/para-method" class="btn btn-primary">Learn More</a>
+                    <a href="{{ "para-method" | relURL }}" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div class="container py-5">
+    {{ .Content }}
 </div>
 {{ end }}
