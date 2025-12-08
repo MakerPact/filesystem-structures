@@ -14,15 +14,37 @@ The Chronological Filing System is a method of organizing files and documents ba
 
 ### Who Should Use This System?
 
-This system is ideal for individuals who work with time-sensitive documents, such as project managers, accountants, and historians. It's also a great choice for anyone who prefers a simple, no-fuss approach to organization.
+This system is ideal for:
+- **Freelancers & Contractors**: Who need to organize invoices and contracts by month/year.
+- **Accountants & Bookkeepers**: For managing financial records that are inherently time-based.
+- **Historians & Archivists**: Who organize materials by the date they were created.
+- **Anyone seeking simplicity**: If you don't want to think about "categories," just file it by "today."
+
+### How It Works: A Practical Example
+
+The system creates a folder for the current year, and subfolders for each month.
+
+**Structure:**
+- `Filing Cabinet/`
+    - `Chronological/`
+        - `2024/`
+            - `01_January/`
+            - `02_February/`
+            - ...
+
+**Example Scenario:**
+You receive an internet bill on March 15th, 2024.
+
+1.  Navigate to `Filing Cabinet/Chronological/2024/03_March/`.
+2.  Save the file as `2024-03-15_InternetBill.pdf`.
+
+By consistently naming files with the date, everything in the folder stays sorted automatically.
 
 ## Download and Setup
 
-You can download the setup scripts for the Chronological Filing System below.
+You can download the setup scripts and a sample folder structure below.
 
-<a href="/downloads/chronological.zip" download class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mt-4">
-  Download Chronological System Scripts (.zip)
-</a>
+{{< download_button file="downloads/chronological.zip" text="Download Scripts & Example System (.zip)" >}}
 
 ### How to Use
 
