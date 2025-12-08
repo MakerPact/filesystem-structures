@@ -1,0 +1,3 @@
+
+> hugo-sassify-theme@1.0.0 start
+> concurrently "npx tailwindcss -i themes/hugo-saasify-theme/assets/css/main.css -o static/css/style.css --watch" "hugo server -D"
