@@ -14,15 +14,38 @@ The Johnny Decimal system is a method of organizing digital files using a unique
 
 ### Who Should Use This System?
 
-This system is perfect for individuals who manage a large number of files and projects, such as software developers, researchers, and administrators. It is also a good choice for teams that need a shared understanding of their file structure.
+This system is perfect for:
+- **Project Managers & Admins**: Who need to manage multiple distinct areas of responsibility.
+- **Developers & Researchers**: Who have deeply nested data but need quick access.
+- **Teams**: To ensure everyone saves files in the exact same place.
+- **Organized Minds**: People who love having a specific "place for everything."
+
+### How It Works: A Practical Example
+
+The system divides everything into 10 Areas, 10 Categories per Area, and then IDs for specific items.
+
+**Structure:**
+- `10-19 Finance` (Area)
+    - `11 Tax` (Category)
+        - `11.01 2023 Returns` (ID)
+        - `11.02 2024 Returns` (ID)
+
+**Example Scenario:**
+You need to save your tax return for the year 2024.
+
+1.  Identify the Area: **Finance** (10-19).
+2.  Identify the Category: **Tax** (11).
+3.  Identify (or create) the ID: **2024 Returns** (11.02).
+4.  Navigate to `10-19 Finance/11 Tax/11.02 2024 Returns/`.
+5.  Save the file as `2024_Tax_Return_Final.pdf`.
+
+You never have to wonder "where did I put that tax file?" again—it's always in `11.02`.
 
 ## Download and Setup
 
-You can download the setup scripts for the Johnny Decimal Filing System below.
+You can download the setup scripts and a sample folder structure below.
 
-<a href="/downloads/johnny_decimal.zip" download class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mt-4">
-  Download Johnny Decimal System Scripts (.zip)
-</a>
+{{< download_button file="downloads/johnny_decimal.zip" text="Download Scripts & Example System (.zip)" >}}
 
 ### How to Use
 
