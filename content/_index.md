@@ -1,6 +1,5 @@
 ---
 title: "The Ultimate Filing System"
-layout: "landing"
 ---
 
 ## Stop Searching, Start Organizing

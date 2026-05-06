@@ -2,6 +2,8 @@
 title: "Project-Based Filing System"
 date: 2023-10-03
 draft: false
+layout: "filing-system"
+description: "Organize your files around specific tasks, goals, or initiatives."
 ---
 
 # Project-Based Filing System

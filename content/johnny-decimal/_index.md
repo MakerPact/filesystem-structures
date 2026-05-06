@@ -1,5 +1,7 @@
 ---
 title: "Johnny Decimal Filing System"
+layout: "filing-system"
+description: "A precise numbering system for organizing files by project and category."
 ---
 
 ## The Johnny Decimal Filing System

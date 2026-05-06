@@ -1,0 +1,101 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6">
+        <ol class="flex items-center space-x-2 text-sm text-gray-600">
+            <li><a href="{{ "/" | relURL }}" class="hover:text-primary-600">Home</a></li>
+            <li>
+                <svg class="w-4 h-4 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </li>
+            <li class="font-medium text-gray-900">{{ .Title }}</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-col lg:flex-row gap-8 mb-12">
+        <!-- Main Content -->
+        <article class="flex-1">
+            <header class="mb-8">
+                <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+                
+                {{ with .Description }}
+                    <div class="text-xl text-gray-600 mb-6">{{ . }}</div>
+                {{ end }}
+            </header>
+
+            <!-- Download Button -->
+            {{ $downloadFile := "" }}
+            {{ if eq .File.Dir "chronological/" }}
+                {{ $downloadFile = "chronological.zip" }}
+            {{ else if eq .File.Dir "johnny-decimal/" }}
+                {{ $downloadFile = "johnny_decimal.zip" }}
+            {{ else if eq .File.Dir "para-method/" }}
+                {{ $downloadFile = "para_method.zip" }}
+            {{ end }}
+            
+            {{ if $downloadFile }}
+            <div class="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-lg font-semibold text-blue-900">Ready to Get Started?</h3>
+                        <p class="text-blue-700">Download the scripts and example folder structure to implement this system.</p>
+                    </div>
+                    <a href="{{ (printf "downloads/%s" $downloadFile) | relURL }}" 
+                       class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 whitespace-nowrap">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        Download System
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+
+            <div class="prose prose-lg max-w-none">
+                {{ .Content }}
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:w-80 xl:w-96">
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 sticky top-24">
+                <h3 class="text-lg font-semibold mb-4">All Filing Systems</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="{{ "/chronological" | relURL }}" 
+                           class="block p-3 rounded hover:bg-gray-100 {{ if eq .File.Dir "chronological/" }}bg-blue-50 border-l-4 border-blue-500{{ end }}">
+                            <span class="font-medium">Chronological</span>
+                            <div class="text-sm text-gray-600">Date-based organization</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ "/johnny-decimal" | relURL }}" 
+                           class="block p-3 rounded hover:bg-gray-100 {{ if eq .File.Dir "johnny-decimal/" }}bg-blue-50 border-l-4 border-blue-500{{ end }}">
+                            <span class="font-medium">Johnny Decimal</span>
+                            <div class="text-sm text-gray-600">Project-based numbering</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ "/para-method" | relURL }}" 
+                           class="block p-3 rounded hover:bg-gray-100 {{ if eq .File.Dir "para-method/" }}bg-blue-50 border-l-4 border-blue-500{{ end }}">
+                            <span class="font-medium">PARA Method</span>
+                            <div class="text-sm text-gray-600">Action-based organization</div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <a href="{{ "/" | relURL }}" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+{{ end }}

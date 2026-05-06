@@ -2,45 +2,60 @@
 <div class="hero" style="background-image: url('{{ "images/hero-image.jpg" | relURL }}');">
     <div class="container-fluid text-center py-5 text-white">
         <h1 class="display-1">Find Your Perfect Digital Filing System</h1>
-        <p class="lead">Organize your digital life with ease.</p>
-        <a href="#filing-systems" class="btn btn-primary btn-lg">Explore Filing Systems</a>
-    </div>
-</div>
-
-<div id="filing-systems" class="container py-5">
-    <h2 class="text-center mb-5">Choose Your System</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Chronological</h5>
-                    <p class="card-text">A simple, date-based system for organizing your files.</p>
-                    <a href="{{ "chronological" | relURL }}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Johnny Decimal</h5>
-                    <p class="card-text">A project-based system for organizing your files.</p>
-                    <a href="{{ "johnny-decimal" | relURL }}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">PARA Method</h5>
-                    <p class="card-text">An action-based system for organizing your files.</p>
-                    <a href="{{ "para-method" | relURL }}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
+        <p class="lead">Discover the filing system that matches how you work</p>
     </div>
 </div>
 
 <div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="mb-4">What's Your Filing Style?</h2>
+        <p class="lead">Are you a Stacker? A Packer? An Organizer? Identify your workflow and find the perfect system.</p>
+    </div>
+    
+    <!-- Workflow-based selection -->
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h3 class="card-title text-primary">The Stacker</h3>
+                    <p class="card-text">You organize files by date - what happened when?</p>
+                    <a href="{{ "chronological" | relURL }}" class="btn btn-outline-primary">Chronological System</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h3 class="card-title text-success">The Packer</h3>
+                    <p class="card-text">You group files by projects and topics</p>
+                    <a href="{{ "johnny-decimal" | relURL }}" class="btn btn-outline-success">Johnny Decimal System</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h3 class="card-title text-info">The Organizer</h3>
+                    <p class="card-text">You plan and execute tasks systematically</p>
+                    <a href="{{ "para-method" | relURL }}" class="btn btn-outline-info">PARA Method</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- All systems download -->
+    <div class="text-center my-5 py-4 bg-light rounded">
+        <h3 class="mb-3">Want to explore all systems?</h3>
+        <p>Download all filing systems with one click:</p>
+        <a href="https://github.com/The-Ultimate-Filing-System/filesystem-structures/archive/refs/heads/main.zip" class="btn btn-primary btn-lg">
+            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+            Download All Systems
+        </a>
+    </div>
+</div>
+
+<!-- Existing content -->
+<div class="container py-3">
     {{ .Content }}
 </div>
 {{ end }}

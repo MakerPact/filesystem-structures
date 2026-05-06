@@ -2,6 +2,8 @@
 title: "Area-Based Filing System"
 date: 2023-10-02
 draft: false
+layout: "filing-system"
+description: "Group files into broad categories or topics for intuitive access."
 ---
 
 # Area-Based Filing System

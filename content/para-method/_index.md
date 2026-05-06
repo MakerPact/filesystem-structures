@@ -1,5 +1,7 @@
 ---
 title: "PARA Method"
+layout: "filing-system"
+description: "An action-oriented system that organizes files by their purpose."
 ---
 
 ## The PARA Method

@@ -1,5 +1,7 @@
 ---
 title: "Chronological Filing System"
+layout: "filing-system"
+description: "Organize your files by date with this simple, time-based filing system."
 ---
 
 ## The Chronological Filing System
