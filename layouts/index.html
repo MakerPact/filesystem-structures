@@ -1,61 +1,69 @@
 {{ define "main" }}
-<div class="hero" style="background-image: url('{{ "images/hero-image.jpg" | relURL }}');">
-    <div class="container-fluid text-center py-5 text-white">
-        <h1 class="display-1">Find Your Perfect Digital Filing System</h1>
-        <p class="lead">Discover the filing system that matches how you work</p>
+<div class="relative bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                <div class="sm:text-center lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block xl:inline">Find Your Perfect</span>
+                        <span class="block text-primary-600 xl:inline">Digital Filing System</span>
+                    </h1>
+                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        Discover the filing system that matches how you work. Are you a Stacker? A Packer? An Organizer? Identify your workflow and find the perfect system.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{{ "images/hero-image.jpg" | relURL }}" alt="Digital Filing System Hero Image">
     </div>
 </div>
 
-<div class="container py-5">
-    <div class="text-center mb-5">
-        <h2 class="mb-4">What's Your Filing Style?</h2>
-        <p class="lead">Are you a Stacker? A Packer? An Organizer? Identify your workflow and find the perfect system.</p>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">What's Your Filing Style?</h2>
+        <p class="mt-4 text-xl text-gray-500">Are you a Stacker? A Packer? An Organizer? Identify your workflow and find the perfect system.</p>
     </div>
     
     <!-- Workflow-based selection -->
-    <div class="row mb-5">
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h3 class="card-title text-primary">The Stacker</h3>
-                    <p class="card-text">You organize files by date - what happened when?</p>
-                    <a href="{{ "chronological" | relURL }}" class="btn btn-outline-primary">Chronological System</a>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white overflow-hidden shadow rounded-lg border border-gray-200">
+            <div class="px-4 py-5 sm:p-6 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2">The Stacker</h3>
+                <p class="text-sm text-gray-500 mb-6">You organize files by date - what happened when?</p>
+                <a href="{{ "chronological" | relURL }}" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">Chronological System</a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h3 class="card-title text-success">The Packer</h3>
-                    <p class="card-text">You group files by projects and topics</p>
-                    <a href="{{ "johnny-decimal" | relURL }}" class="btn btn-outline-success">Johnny Decimal System</a>
-                </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg border border-gray-200">
+            <div class="px-4 py-5 sm:p-6 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2">The Packer</h3>
+                <p class="text-sm text-gray-500 mb-6">You group files by projects and topics</p>
+                <a href="{{ "johnny-decimal" | relURL }}" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700">Johnny Decimal System</a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h3 class="card-title text-info">The Organizer</h3>
-                    <p class="card-text">You plan and execute tasks systematically</p>
-                    <a href="{{ "para-method" | relURL }}" class="btn btn-outline-info">PARA Method</a>
-                </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg border border-gray-200">
+            <div class="px-4 py-5 sm:p-6 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2">The Organizer</h3>
+                <p class="text-sm text-gray-500 mb-6">You plan and execute tasks systematically</p>
+                <a href="{{ "para-method" | relURL }}" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">PARA Method</a>
             </div>
         </div>
     </div>
     
     <!-- All systems download -->
-    <div class="text-center my-5 py-4 bg-light rounded">
-        <h3 class="mb-3">Want to explore all systems?</h3>
-        <p>Download all filing systems with one click:</p>
-        <a href="https://github.com/The-Ultimate-Filing-System/filesystem-structures/archive/refs/heads/main.zip" class="btn btn-primary btn-lg">
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+    <div class="bg-gray-50 rounded-lg px-6 py-8 sm:p-10 text-center mb-12">
+        <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Want to explore all systems?</h3>
+        <p class="text-lg text-gray-500 mb-6">Download all filing systems with one click:</p>
+        <a href="https://github.com/The-Ultimate-Filing-System/filesystem-structures/archive/refs/heads/main.zip" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
+            <svg class="fill-current w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
             Download All Systems
         </a>
     </div>
-</div>
 
-<!-- Existing content -->
-<div class="container py-3">
-    {{ .Content }}
+    <!-- Existing content -->
+    <div class="prose prose-lg text-gray-500 mx-auto">
+        {{ .Content }}
+    </div>
 </div>
 {{ end }}
