@@ -1,3 +1,7 @@
-
-> hugo-sassify-theme@1.0.0 start
-> concurrently "npx tailwindcss -i themes/hugo-saasify-theme/assets/css/main.css -o static/css/style.css --watch" "hugo server -D"
+127.0.0.1 - - [01/Jun/2026 23:46:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Jun/2026 23:46:31] code 404, message File not found
+127.0.0.1 - - [01/Jun/2026 23:46:31] "GET /filesystem-structures/css/main.min.a3f7c9a187d11f73e8c2311a49695393181b85ac43986ada3e13836c08cf4ff6.css HTTP/1.1" 404 -
+127.0.0.1 - - [01/Jun/2026 23:46:31] "GET /images/logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Jun/2026 23:46:31] code 404, message File not found
+127.0.0.1 - - [01/Jun/2026 23:46:31] "GET /filesystem-structures/images/hero-image.jpg HTTP/1.1" 404 -
+127.0.0.1 - - [01/Jun/2026 23:46:32] "GET /images/filing-system-flowchart.jpeg HTTP/1.1" 200 -
