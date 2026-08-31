@@ -5,17 +5,23 @@ YEAR=$(date +%Y)
 BASE_DIR="Filing Cabinet/Chronological Filing System"
 
 # Create the main year directory and all month subdirectories
-mkdir -p "$BASE_DIR/$YEAR/01_January" \
-         "$BASE_DIR/$YEAR/02_February" \
-         "$BASE_DIR/$YEAR/03_March" \
-         "$BASE_DIR/$YEAR/04_April" \
-         "$BASE_DIR/$YEAR/05_May" \
-         "$BASE_DIR/$YEAR/06_June" \
-         "$BASE_DIR/$YEAR/07_July" \
-         "$BASE_DIR/$YEAR/08_August" \
-         "$BASE_DIR/$YEAR/09_September" \
-         "$BASE_DIR/$YEAR/10_October" \
-         "$BASE_DIR/$YEAR/11_November" \
-         "$BASE_DIR/$YEAR/12_December"
+MONTHS=(
+    "01_January"
+    "02_February"
+    "03_March"
+    "04_April"
+    "05_May"
+    "06_June"
+    "07_July"
+    "08_August"
+    "09_September"
+    "10_October"
+    "11_November"
+    "12_December"
+)
+
+for MONTH in "${MONTHS[@]}"; do
+    mkdir -p "$BASE_DIR/$YEAR/$MONTH"
+done
 
 echo "Chronological folder structure for $YEAR created successfully in '$BASE_DIR'."
