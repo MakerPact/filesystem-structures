@@ -1,0 +1,39 @@
+{{- $context := . -}}
+
+{{- $config := site.Params.ananke.social -}}
+{{- $networks := $config.follow.networks -}}
+
+<div class="ananke-socials">
+  {{- range $networks -}}
+    {{- $network := . -}}
+    {{- $setup := collections.Index $config.networks $network -}}
+    {{- $profile := collections.Index $config $network -}}
+    {{- $rel := default "" $profile.rel -}}
+    {{- $label := default $setup.label $profile.label -}}
+
+    {{- $link := $setup.profile -}}
+    {{- with $profile.username -}}
+      {{- $link = printf $link . -}}
+    {{- end -}}
+    {{- with $profile.profilelink -}}
+      {{- $link = $profile.profilelink -}}
+    {{- end -}}
+
+    {{- $languageDirection := cond (eq $.Site.Language.LanguageDirection "rtl") "ml1" "mr1" -}}
+    {{- $relAttr := "noopener" -}}
+    {{- with $rel -}}{{- $relAttr = printf "noopener %s" . -}}{{- end -}}
+    {{- $classAttr := printf "ananke-social-link link-transition %s link dib z-999 pt3 pt0-l %s" $network $languageDirection -}}
+    {{- $titleAttr := printf "follow on %s - Opens in a new window" $label -}}
+    {{- $ariaLabelAttr := printf "follow on %s - Opens in a new window" $label -}}
+    {{ partials.Include "social/link.html" (dict
+      "setup" $setup
+      "label" $label
+      "href" $link
+      "rel" $relAttr
+      "class" $classAttr
+      "title" $titleAttr
+      "ariaLabel" $ariaLabelAttr
+      "new_window_icon" $config.follow.new_window_icon
+    ) }}
+  {{- end -}}
+</div>
