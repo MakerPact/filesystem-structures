@@ -27,7 +27,7 @@ def run():
             expect(img).to_be_visible()
 
             # Check Download Link
-            download_link = page.get_by_text("Download Repository ZIP")
+            download_link = page.get_by_role("link", name="Download All Filing Systems")
             expect(download_link).to_be_visible()
 
             # Take screenshot
