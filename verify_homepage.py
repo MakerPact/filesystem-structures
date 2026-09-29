@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright, expect
+from playwright.sync_api import sync_playwright, expect, Error, TimeoutError
 
 def run():
     with sync_playwright() as p:
@@ -34,7 +34,7 @@ def run():
             page.screenshot(path="homepage_verification.png", full_page=True)
             print("Verification successful, screenshot saved.")
 
-        except Exception as e:
+        except (Error, TimeoutError) as e:
             print(f"Verification failed: {e}")
         finally:
             browser.close()
