@@ -1,0 +1,30 @@
+{{- $setup := .setup -}}
+{{- $label := .label -}}
+{{- $href := .href -}}
+{{- $rel := .rel -}}
+{{- $ariaLabel := .ariaLabel -}}
+{{- $class := .class -}}
+{{- $title := .title -}}
+{{- $new_window_icon := .new_window_icon -}}
+{{- $show_icon := default "true" .show_icon -}}
+<a href="{{ $href }}" target="_blank" rel="{{ $rel }}" aria-label="{{ $ariaLabel }}"
+    class="{{ $class }}" title="{{ $title }}">
+  {{- if eq "true" $show_icon -}}
+    {{- with $setup.icon -}}
+      {{- $icon := resources.Get (fmt.Printf "ananke/socials/%s.svg" .) -}}
+      {{- with $icon -}}
+        <span class="icon">
+          {{ .Content | safe.HTML }}
+          {{/* @todo indicator for missing or misconfigured icon */}}
+        </span>
+      {{- end -}}
+    {{- else -}}
+      {{- $label -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $label -}}
+  {{- end -}}
+  {{- with $new_window_icon -}}
+    {{- partials.Include "new-window-icon.html" . -}}
+  {{- end -}}
+</a>

@@ -1,0 +1,50 @@
+{{- $context := . -}}
+{{- $disabled := default "false" $context.Params.disable_share -}}
+{{- $config := site.Params.ananke.social -}}
+{{- with $config.share.disable_share -}}
+  {{- $disabled := . -}}
+{{- end -}}
+
+{{- if eq "false" $disabled -}}
+
+  {{- $title := $context.Title -}}
+  {{- $url := fmt.Printf "%s" $context.Permalink | urls.AbsLangURL -}}
+
+  {{- $networks := $config.share.networks -}}
+  {{- $hasLabel := default "true" $config.share.sharetext -}}
+  {{- $hasIcon := default "true" $config.share.icons -}}
+
+  <div id="sharing" class="mt3 ananke-socials">
+    {{- range $networks -}}
+      {{- $network := . -}}
+      {{- $setup := collections.Index $config.networks $network -}}
+      {{/* @todo lang.Translate $sharetext := lang.Translate (fmt.Printf "share_on_%s" $setup.slug) */}}
+      {{- $label := "" -}}
+      {{ with $config.share.sharetext -}}
+        {{- $label = fmt.Printf "Share on %s" $setup.label -}}
+      {{- end -}}
+      {{ if default "true" (eq $setup.share "false") -}}
+        {{- continue -}}
+        {{/* @todo notification into CLI that a network is configured but not supported */}}
+      {{- end -}}
+      {{- $options := (dict "context" page "setup" $setup) }}
+      {{- $href := partials.Include "func/social/getShareLink.html" $options -}}
+      {{- $classAttr := printf "ananke-social-link %s no-underline" $setup.slug -}}
+      {{- $showIconStr := "true" -}}
+      {{- if not $config.share.icons -}}
+        {{- $showIconStr = "false" -}}
+      {{- end -}}
+      {{ partials.Include "social/link.html" (dict
+        "setup" $setup
+        "label" $label
+        "href" $href
+        "rel" "nofollow noopener noreferrer"
+        "class" $classAttr
+        "title" $label
+        "ariaLabel" $label
+        "show_icon" $showIconStr
+      ) }}
+    {{- end -}}
+  </div>
+
+{{- end -}} {{/* if eq "true" $disabled */}}
